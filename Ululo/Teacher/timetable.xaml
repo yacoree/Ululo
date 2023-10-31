@@ -1,0 +1,89 @@
+﻿<Page x:Class="Ululo.Teacher.timetable"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:fa="http://schemas.fontawesome.io/icons/"
+      xmlns:local="clr-namespace:Ululo.Teacher"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="900"
+      Title="timetable">
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border CornerRadius="0 0 0 20" Background="#fefefe"/>
+            <Border CornerRadius="0 0 20 0" Background="#8bc7fc" Grid.Column="1"/>
+        </Grid>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1.2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 50 0 30">
+                    <Button Style="{StaticResource calendarButton}">
+                        <fa:ImageAwesome Icon="AngleLeft" Style="{StaticResource angle}"/>
+                    </Button>
+
+                    <Button Content="2021" Style="{StaticResource calendarButton}" />
+                    <Button Content="2022" Style="{StaticResource calendarButton}" />
+                    <Button Content="2023" Style="{StaticResource calendarButton}" FontSize="24" Foreground="#8bc7fc"/>
+                    <Button Content="2024" Style="{StaticResource calendarButton}" />
+                    <Button Content="2025" Style="{StaticResource calendarButton}" />
+
+                    <Button Style="{StaticResource calendarButton}">
+                        <fa:ImageAwesome Icon="AngleRight" Style="{StaticResource angle}"/>
+                    </Button>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Content="1" Style="{StaticResource buttonMonth}" />
+                    <Button Content="2" Style="{StaticResource buttonMonth}" />
+                    <Button Content="3" Style="{StaticResource buttonMonth}" />
+                    <Button Content="4" Style="{StaticResource buttonMonth}" />
+                    <Button Content="5" Style="{StaticResource buttonMonth}" />
+                    <Button Content="6" Style="{StaticResource buttonMonth}" />
+                    <Button Content="7" Style="{StaticResource buttonMonth}" />
+                    <Button Content="8" Style="{StaticResource buttonMonth}" />
+                    <Button Content="9" Style="{StaticResource buttonMonth}" />
+                    <Button Content="10" Style="{StaticResource buttonCurrentMonth}" />
+                    <Button Content="11" Style="{StaticResource buttonMonth}" />
+                    <Button Content="12" Style="{StaticResource buttonMonth}" />
+                </StackPanel>
+                <Separator Height="0.8" Background="#cacaca" Margin="10 10"/>
+
+                <TextBlock Text="Октябрь" Foreground="#8bc7fc" FontSize="24" TextAlignment="Center" FontWeight="SemiBold" Margin="0 15 0 20"/>
+
+                <Calendar Style="{DynamicResource CalendarStyle2}" CalendarDayButtonStyle="{DynamicResource CalendarCalendarDayButtonStyle1}" CalendarItemStyle="{DynamicResource CalendarCalendarItemStyle2}"/>
+            </StackPanel>
+
+            <StackPanel Grid.Column="1">
+                <StackPanel Margin="20 45 30 10" Orientation="Horizontal">
+                    <TextBlock Text="16" FontSize="50" Foreground= "#ffffff"/>
+                    <StackPanel Margin="10 0 0 0" VerticalAlignment="Center">
+                        <TextBlock Text="октябрь" Foreground="#ffffff" FontSize="24"/>
+                        <TextBlock Text="Четверг" Foreground="#cde7fe" FontSize="14"/>
+                    </StackPanel>
+                    
+                    <Button Style="{StaticResource calendarButton}" Margin="85 0 5 0">
+                        <fa:ImageAwesome Icon="AngleLeft" Style="{StaticResource angleBig}"/>
+                    </Button>
+                    <Button Style="{StaticResource calendarButton}">
+                        <fa:ImageAwesome Icon="AngleRight" Style="{StaticResource angleBig}"/>
+                    </Button>
+                </StackPanel>
+
+                <StackPanel Margin="20 45 30 10" Orientation="Vertical">
+                    <TextBlock Text="Мастерство рукоделия в 17-00, кабинет 123" Style="{StaticResource ClassesInfo}"/>
+                    <TextBlock Text="Мастерство рукоделия в 17-00, кабинет 123" Style="{StaticResource ClassesInfo}"/>
+                    <TextBlock Text="Мастерство рукоделия в 17-00, кабинет 123" Style="{StaticResource ClassesInfo}"/>
+                </StackPanel>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="Ululo.Controls.StatElement"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Name="statElement">
+    <Grid>
+        <Border Padding="15" Background="#8bc7fc" CornerRadius="25" Height="auto" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Vertical" >
+                <TextBlock Text="{Binding Path=Activity, ElementName=statElement}" TextAlignment="Center" TextWrapping="Wrap" FontSize="22" Foreground="#ffffff" FontWeight="Bold"/>
+                <TextBlock Text="{Binding Path=FirstPlase, ElementName=statElement}" FontSize="18" Foreground="#ffffff" FontWeight="SemiBold"/>
+                <TextBlock Text="{Binding Path=SecondPlase, ElementName=statElement}" FontSize="18" Foreground="#deeffe"/>
+                <TextBlock Text="{Binding Path=ThirdPlase, ElementName=statElement}" FontSize="18" Foreground="#deeffe"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

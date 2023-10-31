@@ -1,0 +1,53 @@
+﻿<Window x:Class="Ululo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        xmlns:uc="clr-namespace:Ululo.Controls"
+        mc:Ignorable="d" 
+        Background="Transparent" 
+        WindowStartupLocation="CenterScreen" 
+        Height="500" Width="800">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Visual block-->
+        <Border Background="#8bc7fc" Padding="30" CornerRadius="0 0 0 25">
+            <StackPanel VerticalAlignment="Center">
+                <TextBlock Text="Лого?" TextAlignment="Center" FontWeight="SemiBold" FontSize="28"/>
+            </StackPanel>
+        </Border>
+        
+        <!--Input block-->
+        <Border Grid.Column="1" Background="#ffffff" Padding="30" CornerRadius="0 0 25 0">
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 10 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Text="Логин" Grid.Row="0" Style="{StaticResource text}"/>
+                <TextBlock Text="Пароль" Grid.Row="1" Style="{StaticResource text}"/>
+
+                <TextBox Text="Введите логин" Grid.Column="1"/>
+                <TextBox Text="Введите пароль" Grid.Column="1" Grid.Row="1"/>
+                <!--<uc:MyTextBox Text="Логин" Grid.Row="0" Grid.Column="1" Style="{StaticResource text}"/>
+                <uc:MyTextBox Text="Пароль" Grid.Row="1" Grid.Column="1" Style="{StaticResource text}"/>-->
+
+                <Button Content="Войти" Grid.ColumnSpan="2" Grid.Row="2" Margin="0 10" Padding="10" Width="200" Style="{StaticResource button}"/>
+            </Grid>
+        </Border>
+            
+    </Grid>
+</Window>
