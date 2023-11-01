@@ -58,7 +58,7 @@
 
                 <TextBlock Text="Октябрь" Foreground="#8bc7fc" FontSize="24" TextAlignment="Center" FontWeight="SemiBold" Margin="0 15 0 20"/>
 
-                <Calendar Style="{DynamicResource CalendarStyle2}" CalendarDayButtonStyle="{DynamicResource CalendarCalendarDayButtonStyle1}" CalendarItemStyle="{DynamicResource CalendarCalendarItemStyle2}"/>
+                <Calendar Style="{DynamicResource CalendarStyle2}" CalendarDayButtonStyle="{DynamicResource CalendarCalendarDayButtonStyle2}" CalendarItemStyle="{DynamicResource CalendarCalendarItemStyle2}"/>
             </StackPanel>
 
             <StackPanel Grid.Column="1">
@@ -68,13 +68,16 @@
                         <TextBlock Text="октябрь" Foreground="#ffffff" FontSize="24"/>
                         <TextBlock Text="Четверг" Foreground="#cde7fe" FontSize="14"/>
                     </StackPanel>
+
+                    <StackPanel Margin="40 0 0 0" Orientation="Horizontal">
+                        <Button Style="{StaticResource calendarButton}" >
+                            <fa:ImageAwesome Icon="AngleLeft" Style="{StaticResource angleBig}"/>
+                        </Button>
+                        <Button Style="{StaticResource calendarButton}">
+                            <fa:ImageAwesome Icon="AngleRight" Style="{StaticResource angleBig}"/>
+                        </Button>
+                    </StackPanel>
                     
-                    <Button Style="{StaticResource calendarButton}" Margin="85 0 5 0">
-                        <fa:ImageAwesome Icon="AngleLeft" Style="{StaticResource angleBig}"/>
-                    </Button>
-                    <Button Style="{StaticResource calendarButton}">
-                        <fa:ImageAwesome Icon="AngleRight" Style="{StaticResource angleBig}"/>
-                    </Button>
                 </StackPanel>
 
                 <StackPanel Margin="20 45 30 10" Orientation="Vertical">

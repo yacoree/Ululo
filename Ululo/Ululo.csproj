@@ -68,11 +68,17 @@
     <Compile Include="Associate\Statistics.xaml.cs">
       <DependentUpon>Statistics.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Classes.xaml.cs">
+      <DependentUpon>Classes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Controls\StatElement.xaml.cs">
       <DependentUpon>StatElement.xaml</DependentUpon>
     </Compile>
     <Compile Include="Teacher\Classes.xaml.cs">
       <DependentUpon>Classes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\EditClass.xaml.cs">
+      <DependentUpon>EditClass.xaml</DependentUpon>
     </Compile>
     <Compile Include="Teacher\MainWindowTeacher.xaml.cs">
       <DependentUpon>MainWindowTeacher.xaml</DependentUpon>
@@ -89,6 +95,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Associate\Statistics.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Classes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -116,6 +126,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Teacher\Classes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Teacher\EditClass.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

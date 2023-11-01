@@ -1,0 +1,46 @@
+﻿<Page x:Class="Ululo.Teacher.EditClass"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Ululo.Teacher"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800">
+
+    <Grid>
+        <Border CornerRadius="0 0 20 20" Background="#fefefe"/>
+
+        <Grid Margin="10">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75" />
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Название" Foreground="#8bc7fc" FontSize="35" FontWeight="SemiBold"/>
+                <TextBlock Text="Кабинет" Foreground="#8bc7fc" FontSize="18" />
+            </StackPanel>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel>
+                    <TextBlock Text="Имя" FontSize="18"/>
+                    <TextBlock Text="Имя" FontSize="18"/>
+                    <TextBlock Text="Имя" FontSize="18"/>
+                    <TextBlock Text="Имя" FontSize="18"/>
+                    <TextBlock Text="Имя" FontSize="18"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Top">
+                    <ComboBox Width="150"/>
+                    <Button Content="+" Margin="0 10 0 10" Width="25" Style="{StaticResource buttonCurrentMonth}"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

@@ -33,7 +33,7 @@ namespace Ululo.Controls
         }
 
         public static readonly DependencyProperty ActivityProperty = DependencyProperty.Register
-            ("Hint", typeof(string), typeof(StatElement));
+            ("Activity", typeof(string), typeof(StatElement));
 
         public string FirstPlase
         {
@@ -42,7 +42,7 @@ namespace Ululo.Controls
         }
 
         public static readonly DependencyProperty FirstPlaseProperty = DependencyProperty.Register
-            ("Hint", typeof(string), typeof(StatElement));
+            ("FirstPlase", typeof(string), typeof(StatElement));
 
         public string SecondPlase
         {
@@ -51,7 +51,7 @@ namespace Ululo.Controls
         }
 
         public static readonly DependencyProperty SecondPlaseProperty = DependencyProperty.Register
-            ("Hint", typeof(string), typeof(StatElement));
+            ("SecondPlase", typeof(string), typeof(StatElement));
 
         public string ThirdPlase
         {
@@ -60,7 +60,7 @@ namespace Ululo.Controls
         }
 
         public static readonly DependencyProperty ThirdPlaseProperty = DependencyProperty.Register
-            ("Hint", typeof(string), typeof(StatElement));
+            ("ThirdPlase", typeof(string), typeof(StatElement));
     }
 
 

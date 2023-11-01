@@ -7,7 +7,7 @@
         xmlns:uc="clr-namespace:Ululo.Controls"
         mc:Ignorable="d" 
         Background="Transparent" 
-        WindowStartupLocation="CenterScreen" 
+        WindowStartupLocation="CenterScreen"  ResizeMode="NoResize"
         Height="500" Width="800">
     
     <Grid>
