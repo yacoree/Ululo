@@ -41,7 +41,7 @@
                 <TextBlock Text="Пароль" Grid.Row="1" Style="{StaticResource text}"/>
 
                 <TextBox Text="Введите логин" Grid.Column="1"/>
-                <TextBox Text="Введите пароль" Grid.Column="1" Grid.Row="1"/>
+                <PasswordBox Password="Введите пароль" Grid.Column="1" Grid.Row="1"/>
                 <!--<uc:MyTextBox Text="Логин" Grid.Row="0" Grid.Column="1" Style="{StaticResource text}"/>
                 <uc:MyTextBox Text="Пароль" Grid.Row="1" Grid.Column="1" Style="{StaticResource text}"/>-->
 
